@@ -105,9 +105,9 @@ if audio_file:
         unsafe_allow_html=True
     )
     emotion_audio_map = {
-    "positive": os.path.expanduser("~/Downloads/positive.mp3"),
-    "negative": os.path.expanduser("~/Downloads/negative.mp3"),
-    "neutral": os.path.expanduser("~/Downloads/neutral.mp3"),
+    "positive": "positive.mp3",
+    "negative": "negative.mp3",
+    "neutral": "neutral.mp3",
 }
     audio_file = emotion_audio_map.get(overall_emotion.lower())
     st.info("Please listen to this audio file that matches the detected emotion: ")
