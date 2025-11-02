@@ -80,7 +80,7 @@ if audio_file:
                     emotions.append(seg["sentiment"])
                 elif "label" in seg:
                     emotions.append(seg["label"])
-
+    overall_emotion = "cannot detect"
     if emotions:
         overall_emotion = max(set(emotions), key=emotions.count)
         st.success(f"**Predicted overall emotion:** {overall_emotion}")
