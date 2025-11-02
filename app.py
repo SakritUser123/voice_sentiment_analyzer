@@ -110,7 +110,7 @@ if audio_file:
     "neutral": "neutral.mp3",
 }
     audio_file = emotion_audio_map.get(overall_emotion.lower())
-    if overall_emotion == 'positive or overall_emotion == 'negative' or overall_emotion == 'neutral':
+    if overall_emotion == 'positive' or overall_emotion == 'negative' or overall_emotion == 'neutral':
         st.info("Please listen to this audio file that matches the detected emotion: ")
     if audio_file:
         st.audio(audio_file, format="audio/mp3")
