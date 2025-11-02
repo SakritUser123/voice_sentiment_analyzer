@@ -6,7 +6,7 @@ API_KEY = "3fdb37741ce74dd69296a0cdea6761bf"
 HEADERS = {"authorization": API_KEY}
 # imports needed libraries for the app and also import api requests library
 
-st.title("Audio Emotion Analyzer")
+st.title("Human Speech Sentiment Analyzer")
 st.write("Upload a .mp3 or .wav file, and get the overall sentiment detected.")
 
 audio_file = st.file_uploader("Upload Audio", type=["wav", "mp3"])
